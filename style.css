@@ -1,0 +1,65 @@
+/* Загальні стилі для прапора */
+.flag {
+    width: 200px;
+    height: 200px;
+    background-color: #d52b1e; /* Червоний фон */
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* За допомогою position */
+.flag-position::before, .flag-position::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    border-radius: 10px; /* Скруглення країв */
+}
+
+/* Вертикальна частина хреста */
+.flag-position::before {
+    width: 40px;
+    height: 120px;
+    left: 80px;
+    top: 40px;
+}
+
+/* Горизонтальна частина хреста */
+.flag-position::after {
+    width: 120px;
+    height: 40px;
+    left: 40px;
+    top: 80px;
+}
+
+/* За допомогою transform */
+.flag-transform::before, .flag-transform::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    border-radius: 10px; /* Скруглення країв */
+}
+
+/* Вертикальна частина хреста */
+.flag-transform::before {
+    width: 40px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Горизонтальна частина хреста */
+.flag-transform::after {
+    width: 120px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* Контейнер */
+.flag-container {
+    display: flex;
+    gap: 60px; 
+    margin-top: 20px;
+}

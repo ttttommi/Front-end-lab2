@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab2</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            width: 180px;
+            height: 30px;
+            font-size: 25px; 
+        }
+        
+        /* Колір для першого рядка */
+        tr:nth-child(1) {
+            background-color: #228f8f;
+            color: #120B01; /* Контрастний колір для тексту */
+        }
+
+        /* Колір для другого рядка */
+        tr:nth-child(2) {
+            background-color: #f5f522;
+            color: #595959; /* Контрастний колір для тексту */
+        }
+
+        /* Зміна кольорів при наведенні на перший рядок */
+        tr:nth-child(1):hover {
+            background-color: #120B01;
+            color: #228f8f; /* Контрастний колір */
+        }
+
+        /* Зміна кольорів при наведенні на другий рядок */
+        tr:nth-child(2):hover {
+            background-color: #595959;
+            color: #f5f522; /* Контрастний колір */
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td rowspan="3">Борисенко</td>
+        <td>Таміла</td>
+        <td rowspan="3">Олексіївна</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ІО-25</td>
+        <td>ЛР-2, варіант 2</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="2"></td>
+        <td></td>
+    </tr>
+</table>
+
+
+<div class="flag-container">
+    <div class="flag flag-position"></div>
+
+    <div class="flag flag-transform"></div>
+</div>
+    
+</body>
+</html>
